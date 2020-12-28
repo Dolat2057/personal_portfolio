@@ -35,14 +35,14 @@ $(document).ready(function(){
 
     // typing text animation script
     var typed = new Typed(".typing", {
-        strings: ["Developer", "Blogger", "Designer"],
+        strings: ["Developer", "Designer"],
         typeSpeed: 100,
         backSpeed: 60,
         loop: true
     });
 
     var typed = new Typed(".typing-2", {
-        strings: [ "Developer.", "Blogger.", "Designer."],
+        strings: [ "Developer.", "Designer."],
         typeSpeed: 100,
         backSpeed: 60,
         loop: true
@@ -109,3 +109,40 @@ $(this).addClass("active");
 
 });
 
+// form validation
+function required()
+{
+var name = document.forms["form1"]["name"].value;
+var email = document.forms["form1"]["email"].value;
+var subject = document.forms["form1"]["subject"].value;
+var message = document.forms["form1"]["message"].value;
+
+
+
+if (name == "")
+{
+alert("Name is required");
+window.location.href = "index.html#contact";
+}
+else if(email == ""){
+    alert("Email is required");
+    if(email == "@"){
+        alert("Email includes @");
+    }
+}
+else if(subject == ""){
+    alert("Subject is required");
+}
+else if(message == ""){
+    alert("Message is required");
+}
+else if(name == "" || name == null,  email == "" || email == null, subject == "" || subject == null,  message == "" || message == null  ){
+    alert("Please fill all the details first !!!")
+
+}
+else 
+{
+alert('Your data is submitted !! We will get back to you.');
+return true; 
+}
+}
