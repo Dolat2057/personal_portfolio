@@ -76,7 +76,7 @@ $(document).ready(function(){
 var particles = Particles.init({
 	selector: '.background',
   sizeVariations: 7 ,
-  color: ['#fffff', '#32A1A0','#000000'],
+  color: ['#fffff', 'seagreen','#000000'],
   connectParticles: false
 });
   
