@@ -392,6 +392,10 @@ section .title::after {
     width: 50%;
 }
 
+.skills-content .right .django::before {
+    width: 50%;
+}
+
 .skills-content .right .mysql::before {
     width: 70%;
 }
